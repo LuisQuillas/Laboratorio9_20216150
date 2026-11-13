@@ -13,6 +13,8 @@
         .casilla {
             height: 100px;
             border: 1px solid black;
+            background-image: url("/bulbasaur.png");
+            background-size: 300px 300px;
         }
     </style>
 </head>
@@ -20,18 +22,19 @@
      <h1>Stf-Puzzle Simplified Version</h1>
 
      <div id="tablero">
-         <div class="casilla"></div>
-         <div class="casilla"></div>
-         <div class="casilla"></div>
-         <div class="casilla"></div>
-         <div class="casilla"></div>
-         <div class="casilla"></div>
-         <div class="casilla"></div>
-         <div class="casilla"></div>
-         <div class="casilla"></div>
+         <div class="casilla" style="background-position: 0px 0px;"></div>
+         <div class="casilla" style="background-position: -100px 0px;"></div>
+         <div class="casilla" style="background-position: -200px 0px;"></div>
+         <div class="casilla" style="background-position: 0px -100px;"></div>
+         <div class="casilla" style="background-position: -100px -100px;"></div>
+         <div class="casilla" style="background-position: -200px -200px;"></div>
+         <div class="casilla" style="background-position: 0px -200px;"></div>
+         <div class="casilla" style="background-position: -100px -200px;"></div>
+         <div class="casilla" style="background-image: none;"></div>
 
      </div>
 
 <input type="text" value="Tipo: 3x3">
+<button>Iniciar juego</button>
 </body>
 </html>
