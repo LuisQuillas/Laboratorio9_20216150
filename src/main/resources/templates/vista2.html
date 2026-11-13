@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stf-Puzzle Simplified Version</title>
+    <style>
+        #tablero{
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            width: 300px;
+            margin: 0 auto;
+        }
+        .casilla {
+            height: 100px;
+            border: 1px solid black;
+            background-image: url("/articuno.png");
+            background-size: 300px 300px;
+        }
+    </style>
+</head>
+<body>
+<h1>Stf-Puzzle Simplified Version</h1>
+
+<div id="tablero">
+    <div class="casilla" style="background-position: 0px 0px;"></div>
+    <div class="casilla" style="background-position: -100px 0px;"></div>
+    <div class="casilla" style="background-position: -200px 0px;"></div>
+    <div class="casilla" style="background-position: 0px -100px;"></div>
+    <div class="casilla" style="background-position: -100px -100px;"></div>
+    <div class="casilla" style="background-position: -200px -200px;"></div>
+    <div class="casilla" style="background-position: 0px -200px;"></div>
+    <div class="casilla" style="background-position: -100px -200px;"></div>
+    <div class="casilla" style="background-image: none;"></div>
+
+</div>
+
+<input type="text" value="Tipo: 3x3">
+<button onclick = "location.href='vista3'">Siguiente imagen</button>
+<button>Iniciar juego</button>
+</body>
+</html>
